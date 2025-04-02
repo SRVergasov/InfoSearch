@@ -1,6 +1,6 @@
 data/*
 .venv/*
 .idea/
-lemmas.txt
-tokens.txt
+tokens/
+lemmas/
 index.txt
