@@ -5,3 +5,5 @@ tokens/
 lemmas/
 index.txt
 inverted_index.json
+tfidf_lemmas/
+tfidf_tokens/
