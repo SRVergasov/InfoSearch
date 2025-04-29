@@ -23,7 +23,7 @@ def load_tfidf_vectors():
                 idf = float(idf)
                 tfidf = float(tfidf)
                 vector[term] = tfidf
-                idf_values[term] = idf  # idf одинаков для всех документов
+                idf_values[term] = idf
         doc_vectors[doc_id] = vector
     return doc_vectors, idf_values
 
@@ -36,7 +36,7 @@ def vectorize_query(query_terms, idf_values):
     query_vector = {}
     for term, count in tf.items():
         tf_rel = count / total_terms
-        idf = idf_values.get(term, math.log(1 + len(doc_vectors)))  # Fallback idf
+        idf = idf_values.get(term, math.log(1 + len(doc_vectors)))
         query_vector[term] = tf_rel * idf
     return query_vector
 
