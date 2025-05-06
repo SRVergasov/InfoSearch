@@ -2,4 +2,4 @@
 - `python -m venv venv` - создание виртуального окружения
 - `.venv\\Scripts\\activate` - активация виртуального окружения
 - `pip install -r requirements.txt` - установка зависимостей
-- `python task5.py` - выполнить
+- `python app.py` - выполнить
